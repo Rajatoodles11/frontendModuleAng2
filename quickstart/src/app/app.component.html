@@ -1,0 +1,31 @@
+<h1>Hello {{name}}</h1>
+<h3>Environment Data is:- </h3>
+
+<table>
+    <thead>
+        <tr>
+            <td>Environment</td>
+            <td>Value</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Default</td>
+            <td>{{ env.default}} </td>
+        </tr>
+        <tr>
+            <td>Development</td>
+            <td> {{ env.development }} </td>
+        </tr>
+        <tr>
+            <td>Staging</td>
+            <td> {{ env.staging }} </td>
+        </tr>
+        <tr>
+            <td>Production</td>
+            <td>{{ env.production }} </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2><a routerLink="/login">login</a></h2>
